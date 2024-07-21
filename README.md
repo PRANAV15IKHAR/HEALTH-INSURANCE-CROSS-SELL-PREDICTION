@@ -1,4 +1,4 @@
-# Capstone-project-3
+# Capstone-project-6
 # Health-insurance-cross-sell-prediction
 
 This is a note book of  cross selling of health insurance customers on vehicle insurance product and using machine learning to predict whether a customer is interested or not in vehicle insurancen
@@ -32,10 +32,8 @@ Checking Evaluation Matrix for tuned Model
 Choose which model has the best recall score for this case
 
 ## Conclusion:
- Starting from loading our dataset, we initially checked for null values and duplicates. There were no null values and duplicates so treatment of such was not required.
-Through Exploratory Data Analysis,we observed that customers belonging to youngAge are more interested in vehicle response.while Young people below 30 are not interested in vehicle insurance. We observed that customers having vehicles older than 2 years are more likely to be interested in vehicle insurance. Similarly, customers having damaged vehicles are more likely to be interested in vehicle insurance.
-The variable such as Age, Previously_insured,Annual_premium are more afecting the target variable.
-For Feature Selection, we applied the Mutual Information technique. Here we observed that Previously_Insured is the most important feature and has the highest impact on the dependent feature and there is no correlation between the two.
-We observed that the target variable was highly imbalanced.So this issue was solved by using Random Over Sample resampling technique.
-we applied feature scaling techniques to normalize our data to bring all features on the same scale and make it easier to process by ML algorithms.
-Further, we applied Machine Learning Algorithms to determine whether a customer would be interested in Vehicle Insurance.For the logistic regression we got an accuracy of 78% and for the XGBClassifier we got the aacuracy of 79% whereas, Randomforest and Decision tree are giving us almost similar result of accuracy and ROC_AUC which is 91% and 92% respectively.So, we selected our best model as the model with an accuracy score of 91% i.e Random Forest model and Decision Tree this model preform better.
+Through Exploratory Data Analysis, I observed that customers belonging to young Age are more interested in vehicle response. While young people below 30 are not interested in vehicle insurance. I also noticed that customers with vehicles older than 2 years are more likely to be interested in vehicle insurance. Similarly, customers with damaged vehicles are more likely to be interested in vehicle insurance.
+Variables such as Age, Previously_insured, and Annual_premium seem to have a significant impact on the target variable.
+I found that the target variable was highly imbalanced, which I addressed by using the Random Over Sample resampling technique. Additionally, I applied feature scaling techniques to normalize our data, bringing all features to the same scale, which makes it easier for ML algorithms to process.
+I then applied Machine Learning Algorithms to predict whether a customer would be interested in Vehicle Insurance. For logistic regression, I achieved an accuracy of 78%, and for the XGBoost Classifier, I obtained an accuracy of 79%. However, I achieved the highest accuracy of about 91% and an ROC_AUC score of 92% with the random forest model. Therefore, I conclude that random forest is the best model compared to the others.
+
